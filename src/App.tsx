@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import monkey from './assets/monkey.jpg'
 import './App.css'
 
@@ -36,7 +35,6 @@ const messages=["Well, that's a real masterpiece of chaos!",
 "This isn't just chaos; it's a chaotic opulence that redefines disorder!"]
 
 function App() {
-  const [count, setCount] = useState(0)
   const [message, setMessage] = useState(getRandomMessage())
 
 
@@ -50,14 +48,6 @@ function App() {
       alignItems: 'stretch'
     }} >
       <h1>IS IT A SHAMBLES?</h1>
-      {/* <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={monkey} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a> */}
-      {/* </div> */}
       <div className="card">
         <button onClick={() => setMessage(getRandomMessage)}>
           <h2>
