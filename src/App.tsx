@@ -43,8 +43,9 @@ function App() {
       backgroundImage: `url(${monkey})`,
         width: '100vw',
         height: '100vh',
-        backgroundSize: 'cover',
+        backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
       alignItems: 'stretch'
     }} >
       <h1>IS IT A SHAMBLES?</h1>
